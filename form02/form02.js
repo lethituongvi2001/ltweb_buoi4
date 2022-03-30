@@ -20,13 +20,14 @@
 		return false;
 		}
 		
-		if(em==''){
-		alert("Tên đăng nhập không được bỏ trống");
-		return false;
-		}
+		if(!emRegExp.test(email))
+    		{
+        	alert('Email không hợp lệ');
+        	return false
+    		}
 		
 		if(dt==''){
-		alert("Mật khẩu bỏ trống kìa pà ");
+		alert("Điện thoại không được bỏ trống ");
 		return false;
 		}
 		alert("Chào mừng pà nha!!");
