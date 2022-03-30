@@ -1,0 +1,40 @@
+	
+
+table {
+  background-image: linear-gradient(to bottom right, blue, violet);
+border-collapse: collapse;
+}
+button{
+	padding: 5px 10px;
+	border:3px red;
+	border:solid 1px 	#1e90ff;
+	background:	#ffa500;
+	border-radius: 10px 10px 0 0;
+}
+body {
+    font-family: Tahoma;
+    font-size: 11pt;
+}
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+input{
+	 padding: 5px;
+	 width:250px;
+	border:dotted 1px 	#1e90ff;
+	background:	#e0ffff;
+}
+
+
+
+th {
+    font-size: 13pt;
+	 padding: 5px;
+}
+
+td{
+  padding: 5px;
+}

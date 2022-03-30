@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>form 04</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="form04.css">
+	<script src="form04.js"></script>
+	<!-- Chèn liên kết tập tin CSS vào đây -->
+	<!-- Chèn liên kết các tập tin JavaScripts vào đây -->
+</head>
+
+<body>
+	<form name ='f'action="https://fit.agu.edu.vn/demo.php" method="post">
+		<table border="0" width="400" align="center">
+			<tr>
+				<th colspan="2">THÔNG TIN ĐĂNG KÝ</th>
+			</tr>
+			<tr>
+				<td>Họ Và Tên :</td>
+				<td><input  type="text" name="HoTen" id="HoTen" autofocus required  ></td>
+			</tr>
+			<tr>
+				<td>Ngày Sinh:</td>
+				<td>
+					<select name="Ngay">
+						<option value="">Ngày</option>
+						<script>
+							for(var i=1 ;i<=31;i++)
+							{
+								document.write('<option>'+i+'</option>');
+							}
+						</script>
+					</select>
+					<select name="Thang">
+						<option value="">Tháng</option>
+						<script>
+							for(var i=1 ;i<=12;i++)
+							{
+								document.write('<option>'+i+'</option>');
+							}
+						</script>
+					</select>
+					<select name="Nam">
+						<option value="">Năm</option>
+						<script>
+							var d=new Date();
+							var namHT=d.getFullYear();
+							for(var i=1970 ;i<=namHT;i++)
+							{
+								document.write('<option>'+i+'</option>');
+							}
+						</script>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Giới Tính</td>
+				<td>
+					<input type="radio" name="GioiTinh" value="Nam" checked="checked"> Nam
+					<input type="radio" name="GioiTinh" value="Nữ"> Nữ
+					<input type="radio" name="GioiTinh" value="Chưa rõ"> Chưa rõ
+				</td>
+			</tr>
+			<tr>
+				<td>Nghề Nghiệp:</td>
+				<td>
+					<select name="NgheNghiep">
+						<option value="">--Chọn--</option>
+						<option>Ô sin</option>
+						<option>Quét rác</option>
+						<option>Rửa chén</option>
+						<option>Nuôi heo</option>
+						<option selected>Sinh Viên</option>
+						<option>Nấu cơm</option>
+						<option >Hút chích</option>
+						<option>Gọt củ chuối</option>
+						
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Ghi chú:</td>
+				<td><textarea name="GhiChu"></textarea></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+					<button onclick="return KiemTra()" >Đăng Ký </button>
+					<button type="reset">Xóa Làm Lại</button>
+				</td>
+				
+			</tr>
+		</table>
+	</form>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+	
+body {
+    font-family: Tahoma;
+    font-size: 11pt;
+} 
+th {
+    font-size: 13pt;
+	background-image: linear-gradient(to bottom right, red, yellow);
+	 padding: 5px;
+}
+td{
+  padding: 10px;
+}
+
+table {
+  border:solid 1px 	#ff0000;
+  background:url(images/bgtop_blue.jpg) repeat-x left top;
+border-collapse: collapse;
+}
+button{
+	width:90px;
+	padding: 7px 10px;
+	
+	border:solid 1px 	#1e90ff;
+	background:radial-gradient(circle,  yellow,red);
+	margin:0px 10px;
+}
+
+
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+input{
+	 padding: 5px;
+	 width:250px;
+	border:dotted 1px 	#1e90ff;
+	background:	#e0ffff;
+}
+
+
+
+
